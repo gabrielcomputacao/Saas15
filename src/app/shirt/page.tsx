@@ -7,6 +7,12 @@ export default async function ShirtPage({
 }) {
   // Não tem como passar eventos de interação para server components, como o onclick no button
 
+  await new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("resolvido");
+    }, 2000);
+  });
+
   const { torre = "" } = await searchParams;
 
   if (torre === "fr") {
