@@ -21,6 +21,12 @@ export default async function ReviewId({
   params: Promise<{ productId: string; reviewId: string }>;
 }) {
   const { productId, reviewId } = await params;
+  const NUM = 1;
+
+  // * Testando pagina de error.tsx no path reviewId
+  /*  if (NUM === 1) {
+    throw new Error("erro na pagina , erro, warning");
+  } */
 
   // Caso os ids de review nao existam depois do 10, pega e msotrar uma pagina de erro personalizada
   if (parseInt(reviewId) > 10) {
