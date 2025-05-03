@@ -1,3 +1,10 @@
+import Link from "next/link";
+
 export default function Notifications() {
-  return <h2>Notifications</h2>;
+  return (
+    <div className="flex gap-5">
+      <h2>Notifications</h2>
+      <Link href={"/complex-dashboard/archived"}>Archied Link</Link>
+    </div>
+  );
 }
