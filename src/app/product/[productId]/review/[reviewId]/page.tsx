@@ -24,7 +24,7 @@ export default async function ReviewId({
   const NUM = 1;
 
   // * Testando pagina de error.tsx no path reviewId
-  /*  if (NUM === 1) {
+  /* if (NUM === 1) {
     throw new Error("erro na pagina , erro, warning");
   } */
 
